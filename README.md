@@ -1,44 +1,13 @@
 Identifying trough regions from H3K27ac bigwig file
 ====================================================================================
-Model-based Analysis of Genome-wide CRISPR-Cas9 Knockout (MAGeCK_NEST) is a computational tool to identify important genes from the recent genome-scale CRISPR-Cas9 knockout screens technology. Based on the previous generation, MAGeCK_VISPR, MAGeCK_NEST includes some new features, including:
+This script aims to identify trough regions within H3K27ac peak reagions. Trough regions are more likely to be bound by transcriptional factors. Motif analysis of trough regions may help identify the master regulators that shape the epigentic landscape.
 ```
-* Outliers removal.
-* Protein-protein interaction information integration.
-* QC:
-  1. Histogram of beta scores (modified log fold changes)
-  2. QQ-plot of z-statistics
-  3. Gene set enrichment analysis (GSEA) using positive control genes as quality control.
-  4. Correlation coefficients between interacting genes.
-  5. QC report
+
 ```
 
 # Prerequisites #
-The input of the MAGeCK-NEST workflow are read count files. The formats are sgRNA, gene, readcounts
-Ex: 
-```
-sgRNA         gene     sample1_readcount     sample2_readcount...
-gene1_gRNA_1  gene1    557                   421
-gene1_gRNA_2  gene1    295                   128
-     .          .       .
-     .          .       .
-     .          .       .
-gene2_gRNA_1  gene2    173                   68
-gene2_gRNA_2  gene2    85                    38
-     .          .       .
-     .          .       .
-     .          .       .
-```
-# Usage #
+The input of the MAGeCK-NEST workflow include 1) H3K27ac bigwig file 2) H3K27ac peak file in bed format
 
-```
-python3 mageck_nest.py nest [-h] -k COUNT_TABLE -d DESIGN_MATRIX
-                           [-n OUTPUT_PREFIX] [-i INCLUDE_SAMPLES]
-                           [-b BETA_LABELS]
-                           [--norm-method {none,median,total,control}]
-                           [-e NEGATIVE_CONTROL]
-                           [--genes-varmodeling GENES_VARMODELING]
-                           [--adjust-method {fdr,holm,pounds}] [-o] [-p] [-q]
-```
 
 # Arguments #
 ```
@@ -54,7 +23,7 @@ Required arguments:
 Optional arguments for input and output:
 
   -n OUTPUT_TROUGH_NUMBER, --number=OUTPUT_TROUGH_NUMBER
-                        Number of output trough
+                        Number of output trough, Default = 5,000
 ```
  
 # Demonstration #
