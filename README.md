@@ -6,7 +6,7 @@ This script aims to identify trough regions within H3K27ac peak reagions. Trough
 ```
 
 # Prerequisites #
-The input of the MAGeCK-NEST workflow include 1) H3K27ac bigwig file 2) H3K27ac peak file in bed format
+The input of the H3K27ac trough identification workflow include 1) H3K27ac bigwig file 2) H3K27ac peak file in bed format
 
 
 # Arguments #
