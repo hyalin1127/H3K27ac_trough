@@ -29,5 +29,5 @@ Optional arguments for input and output:
 # Demonstration #
 
 ```
-python3 pioneer_K27ac_motif_Daisy.py -f "H3K27ac_bigwig_file_name" -p "H3K27ac_peaks_file_name"
+K27ac_motif -f "H3K27ac_bigwig_file_name" -p "H3K27ac_peaks_file_name"
 ```
