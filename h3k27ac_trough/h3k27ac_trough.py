@@ -107,12 +107,3 @@ class sgRNA():
         for i in final_record[:self.output_trough_number]:
             insert=i[:3]
             output.write("%s\n" %"\t".join([str(k) for k in insert]))
-
-def main():
-    opts=prepare_optparser()
-    g = sgRNA(opts)
-    g.read_peaks()
-    g.trough_finding()
-
-if __name__ == "__main__":
-    main()

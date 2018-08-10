@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+from h3k27ac_trough.h3k27ac_trough import *
+
+def main():
+    opts=prepare_optparser()
+    g = sgRNA(opts)
+    g.read_peaks()
+    g.trough_finding()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        sys.stderr.write("User interrupt me! ;-) Bye!\n")
+        sys.exit(0)
