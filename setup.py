@@ -15,6 +15,7 @@ setup(
    description='h3k27ac_trough_identification',
    author='Chen-Hao Chen',
    author_email='hyalin1127@gmail.com',
+   scripts = ['bin/sgRNA_finding'],
    packages=['h3k27ac_trough'],
    package_dir={'h3k27ac_trough':'h3k27ac_trough'},
 )
