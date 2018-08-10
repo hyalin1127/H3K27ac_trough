@@ -1,9 +1,6 @@
 Identifying trough regions from H3K27ac bigwig file
 ====================================================================================
 This script aims to identify trough regions within H3K27ac peak reagions. Trough regions are more likely to be bound by transcriptional factors. Motif analysis of trough regions may help identify the master regulators that shape the epigentic landscape.
-```
-
-```
 
 # Prerequisites #
 The input of the H3K27ac trough identification workflow include 1) H3K27ac bigwig file 2) H3K27ac peak file in bed format
@@ -29,5 +26,7 @@ Optional arguments for input and output:
 # Demonstration #
 
 ```
-K27ac_motif -f "H3K27ac_bigwig_file_name" -p "H3K27ac_peaks_file_name"
+h3k27ac_trough -f "H3K27ac_bigwig_file_name" -p "H3K27ac_peaks_file_name"
 ```
+# Contact #
+Chen-Hao Chen (hyalin1127@gmail.com)
