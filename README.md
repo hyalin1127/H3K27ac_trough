@@ -17,6 +17,7 @@ Required arguments:
                         Name of H3K27ac bigwig file
   -p H3K27AC_PEAK_FILE, --peaks=H3K27AC_PEAK_FILE
                         Name of H3K27ac peaks file
+
 Optional arguments for input and output:
 
   -n OUTPUT_TROUGH_NUMBER, --number=OUTPUT_TROUGH_NUMBER
