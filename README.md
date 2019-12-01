@@ -30,4 +30,4 @@ Optional arguments for input and output:
 h3k27ac_trough -f "H3K27ac_bigwig_file_name" -p "H3K27ac_peaks_file_name"
 ```
 # Contact #
-Chen-Hao Chen (hyalin1127@gmail.com)
+Chen-Hao Chen (chen-hao_chen@dfci.harvard.edu)
